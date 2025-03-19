@@ -126,3 +126,10 @@ Si vous avez des idées, ouvrez une **issue** ou proposez une **pull request** s
 ---
 
 🚀 **Bon anniversaire et amusez-vous bien avec votre bot !** 🎉🥳
+
+## 📝 Licence
+
+Ce projet est sous licence **MIT**.  
+Vous êtes libre d'utiliser, modifier et distribuer ce code tant que vous respectez les termes de la licence.
+
+📄 Voir le fichier [LICENSE](LICENSE) pour plus d’informations.
