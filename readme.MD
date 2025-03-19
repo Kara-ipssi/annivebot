@@ -54,7 +54,7 @@ TOKEN=VOTRE_TOKEN_DISCORD
 Exécutez la commande suivante pour démarrer le bot :
 
 ```sh
-node index.js
+npm run dev
 ```
 
 ---
