@@ -7,6 +7,10 @@ Voici un **README.md** complet et bien structuré pour votre bot d'anniversaire 
 **N'oubliez plus jamais l'anniversaire de vos amis sur Discord !**  
 Ce bot permet d'enregistrer et d'afficher automatiquement les anniversaires des membres sur un serveur Discord.
 
+## 📸 Screenshots
+
+![Tu m'as oubliez](screenshots/oubli-annive.png)
+
 ---
 
 ## 🚀 **Fonctionnalités**
@@ -34,7 +38,7 @@ Ce bot permet d'enregistrer et d'afficher automatiquement les anniversaires des 
 Clonez le projet et installez les modules nécessaires :
 
 ```sh
-git clone git@github.com:Kara-ipssi/annivebot.git
+git clone git@github.com:karadev-official/annivebot.git
 cd annivebot
 npm install
 cp .exmeple.env .env
