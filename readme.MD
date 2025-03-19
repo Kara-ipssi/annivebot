@@ -37,6 +37,7 @@ Clonez le projet et installez les modules nécessaires :
 git clone git@github.com:Kara-ipssi/annivebot.git
 cd annivebot
 npm install
+cp .exmeple.env .env
 ```
 
 ### **3️⃣ Configurer le bot**
