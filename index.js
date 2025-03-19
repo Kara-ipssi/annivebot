@@ -18,7 +18,7 @@ const client = new Client({
 });
 
 // 📂 Connexion à la base de données SQLite
-const db = new sqlite3.Database("./birthdays.db", (err) => {
+const db = new sqlite3.Database("./data/birthdays.db", (err) => {
   if (err) console.error("Erreur SQLite :", err);
   else {
     console.log("📂 Base de données connectée !");
@@ -57,7 +57,7 @@ client.on("messageCreate", async (message) => {
   const command = args[0].toLowerCase();
 
     if (command === PREFIX) {
-        if (args[1] === "ajouter") {
+        if (args[1] === "add") {
         let birthday;
         let user;
 
@@ -92,7 +92,7 @@ client.on("messageCreate", async (message) => {
         }
 
         // 📌 Voir les anniversaires du jour
-        else if (args[1] === "aujourd’hui") {
+        else if (args[1] === "today") {
         const today = new Date();
         const todayStr = today.toLocaleDateString("fr-FR", {
             day: "2-digit",
@@ -116,7 +116,7 @@ client.on("messageCreate", async (message) => {
         }
 
         // 📌 Voir les prochains anniversaires
-        else if (args[1] === "prochains") {
+        else if (args[1] === "list") {
         db.all("SELECT username, birthday FROM birthdays ORDER BY birthday ASC", [], (err, rows) => {
             if (err) {
             console.error("Erreur SQLite :", err);
@@ -201,10 +201,10 @@ client.on("messageCreate", async (message) => {
         else {
             message.reply(
                 `❌ Commande invalide. Utilisez :\n` +
-                `\`${PREFIX} ajouter <JJ/MM>\` (pour vous)\n` +
-                `\`${PREFIX} ajouter @utilisateur <JJ/MM>\` (pour un autre)\n` +
-                `\`${PREFIX} aujourd’hui\` (voir les anniversaires du jour)\n` +
-                `\`${PREFIX} prochains\` (voir la liste des prochains anniversaires)\n` +
+                `\`${PREFIX} add <JJ/MM>\` (pour vous)\n` +
+                `\`${PREFIX} add @utilisateur <JJ/MM>\` (pour un autre)\n` +
+                `\`${PREFIX} today \` (voir les anniversaires du jour)\n` +
+                `\`${PREFIX} list \` (voir la liste des prochains anniversaires)\n` +
                 `\`${PREFIX} setchannel \`(définir le channel actuel comme channel des annonces)\n` +
                 `\`${PREFIX} setchannel #channel \`(définir le channel #channel comme channel des annonces)\n`
             );
