@@ -62,15 +62,15 @@ npm run dev
 
 ## 📜 **Commandes disponibles**
 
-| Commande                               | Description                                                  |
-| -------------------------------------- | ------------------------------------------------------------ |
-| `!annive ajouter <JJ/MM>`              | Enregistre votre anniversaire                                |
-| `!annive ajouter @utilisateur <JJ/MM>` | Enregistre l’anniversaire d’un autre utilisateur             |
-| `!annive aujourd’hui`                  | Affiche les anniversaires du jour                            |
-| `!annive prochains`                    | Liste les prochains anniversaires                            |
-| `!annive setchannel`                   | Définit le canal actuel pour les annonces                    |
-| `!annive setchannel #channel`          | Définit un canal spécifique pour les annonces                |
-| `!annive servers`                      | 🔒 **(Owner only)** Liste les serveurs où le bot est présent |
+| Commande                           | Description                                                  |
+| ---------------------------------- | ------------------------------------------------------------ |
+| `!annive add <JJ/MM>`              | Enregistre votre anniversaire                                |
+| `!annive add @utilisateur <JJ/MM>` | Enregistre l’anniversaire d’un autre utilisateur             |
+| `!annive today`                    | Affiche les anniversaires du jour                            |
+| `!annive next`                     | Liste les prochains anniversaires                            |
+| `!annive setchannel`               | Définit le canal actuel pour les annonces                    |
+| `!annive setchannel #channel`      | Définit un canal spécifique pour les annonces                |
+| `!annive servers`                  | 🔒 **(Owner only)** Liste les serveurs où le bot est présent |
 
 ---
 
