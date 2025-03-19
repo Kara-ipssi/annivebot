@@ -34,8 +34,8 @@ Ce bot permet d'enregistrer et d'afficher automatiquement les anniversaires des 
 Clonez le projet et installez les modules nécessaires :
 
 ```sh
-git clone https://github.com/votre-repo/bot-anniversaire.git
-cd bot-anniversaire
+git clone git@github.com:Kara-ipssi/annivebot.git
+cd annivebot
 npm install
 ```
 
